@@ -15,7 +15,7 @@
       padding-right: 20px;
 
       & > div {
-        @include flex(column, $gp: 30px, $ai: flex-start);
+        @include flex(column, $gp: 16px, $ai: flex-start);
         flex-basis: calc(((100% - 80px) / 3) * 2);
         // flex-grow: 1;
 
@@ -51,7 +51,7 @@
       padding-right: 20px;
 
       & > div {
-        @include flex(column, $gp: 30px, $ai: flex-start);
+        @include flex(column, $gp: 8px, $ai: flex-start);
         flex-basis: calc((100% - 80px) / 3);
         // flex-grow: 1;
 
@@ -63,10 +63,11 @@
 
           position: relative;
 
-          img {
+          img:nth-of-type(1) {
             position: absolute;
-            top: 3px;
+            top: 50%;
             left: -33px;
+            transform: translateY(-50%);
 
             &:nth-child(1) {
               left: -32px;
@@ -76,6 +77,11 @@
 
         p {
           @include p;
+        }
+
+        span {
+          @include h4;
+          color: rgba(189, 189, 189, 1);
         }
       }
     }

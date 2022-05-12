@@ -14,7 +14,7 @@
 
       & > div {
         @include flex(column, $gp: 30px, $ai: flex-start);
-        flex-basis: calc(((100% - 80px) / 3) * 2);
+        flex-basis: 100%;
         // flex-grow: 1;
 
         h3 {
@@ -36,8 +36,21 @@
           }
         }
 
-        p {
-          @include p;
+        div:last-of-type {
+          @include flex(column, $gp: 40px);
+
+          p {
+            @include p;
+          }
+
+          ul {
+            list-style-type: disc;
+            list-style-position: inside;
+
+            li {
+              @include p;
+            }
+          }
         }
       }
     }

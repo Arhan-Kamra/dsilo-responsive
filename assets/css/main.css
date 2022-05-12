@@ -1005,8 +1005,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   line-height: 24px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 24px;
   position: relative;
 }
 .unnamed-section > div.unnamed-section-container > div > div:nth-of-type(1) h3 img {
@@ -1217,7 +1217,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
   flex-basis: calc((100% - 80px) / 3 * 2);
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(1) > div h3 {
@@ -1259,7 +1259,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 8px;
   flex-basis: calc((100% - 80px) / 3);
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 {
@@ -1271,12 +1271,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   line-height: 36px;
   position: relative;
 }
-.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img {
+.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(1) {
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: -33px;
+  transform: translateY(-50%);
 }
-.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-child(1) {
+.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(1):nth-child(1) {
   left: -32px;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div p {
@@ -1284,6 +1285,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
+}
+.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: rgb(189, 189, 189);
 }
 
 .our-advisors > div.our-advisors-container {
@@ -1310,7 +1318,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
   flex-basis: calc((100% - 80px) / 3 * 2);
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(1) > div h3 {
@@ -1352,7 +1360,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 8px;
   flex-basis: calc((100% - 80px) / 3);
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 {
@@ -1364,12 +1372,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   line-height: 36px;
   position: relative;
 }
-.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img {
+.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(1) {
   position: absolute;
-  top: 3px;
+  top: 50%;
   left: -33px;
+  transform: translateY(-50%);
 }
-.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-child(1) {
+.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(1):nth-child(1) {
   left: -32px;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div p {
@@ -1377,6 +1386,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
+}
+.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: rgb(189, 189, 189);
 }
 
 .our-story > div.our-story-container {
@@ -1399,7 +1415,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  flex-basis: calc((100% - 80px) / 3 * 2);
+  flex-basis: 100%;
 }
 .our-story > div.our-story-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1419,7 +1435,24 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
 .our-story > div.our-story-container > div:nth-of-type(1) > div h3 img:nth-child(1) {
   left: -32px;
 }
-.our-story > div.our-story-container > div:nth-of-type(1) > div p {
+.our-story > div.our-story-container > div:nth-of-type(1) > div div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 40px;
+}
+.our-story > div.our-story-container > div:nth-of-type(1) > div div:last-of-type p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.our-story > div.our-story-container > div:nth-of-type(1) > div div:last-of-type ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.our-story > div.our-story-container > div:nth-of-type(1) > div div:last-of-type ul li {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
