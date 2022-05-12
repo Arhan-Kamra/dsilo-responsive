@@ -1,0 +1,32 @@
+@import "base/reset";
+@import "base/customfonts";
+@import "base/typography";
+@import "base/colors";
+@import "base/mixins";
+
+@import "./components/header";
+@import "./components/banner";
+@import "./components/about-dsilo";
+@import "./components/benefits";
+@import "./components/just-video";
+@import "./components/solutions";
+@import "./components/platform";
+@import "./components/technology";
+@import "./components/testimonials";
+@import "./components/footer";
+
+// specific sections for technology page
+@import "./components/technology-banner";
+@import "./components/unnamed-section";
+
+// specific sections for about-us page
+@import "./components/about-us-banner";
+@import "./components/our-purpose";
+@import "./components/our-values";
+@import "./components/leadership-team";
+@import "./components/our-advisors";
+@import "./components/our-story";
+
+@import "layout/layout";
+
+@import "responsive/mediaqueries";

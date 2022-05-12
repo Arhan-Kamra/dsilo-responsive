@@ -1,0 +1,109 @@
+.testimonials {
+  color: $text-color;
+  background-color: #000;
+  position: relative;
+
+  .background-animation {
+    position: absolute;
+    max-width: 620px;
+    max-height: 671px;
+    animation-name: fade;
+    // animation-name: rotate;
+    animation-timing-function: ease-in;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-play-state: running;
+    // opacity: 0;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & > div.testimonials-container {
+    max-width: 870px;
+    margin: 0 auto;
+
+    // background-color: blue;
+  }
+  .testimonial-owl-carousel {
+    position: relative;
+
+    // background: url("../../assets/images/testimonial-background.png");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+
+      button:nth-of-type(1) {
+        position: absolute;
+        left: 0px;
+      }
+
+      button:nth-of-type(2) {
+        position: absolute;
+        right: 0px;
+      }
+
+      button:hover {
+        background-color: transparent;
+      }
+    }
+
+    .item {
+      & > div {
+        max-width: 550px;
+        height: 600px;
+        text-align: center;
+        margin: 0 auto;
+
+        @include flex(column, $jc: center);
+
+        p {
+          max-width: 550px;
+          font-family: Roboto;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 40px;
+          letter-spacing: 0em;
+        }
+      }
+    }
+  }
+}
+
+// testimonials animation starts here
+
+@keyframes fade {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+// @keyframes rotate {
+//   from {
+//     transform: rotateZ(45deg) translate(-50%, -50%);
+//     transform-origin: center center center;
+//   }
+//   to {
+//     transform: rotateZ(0deg) translate(-50%, -50%);
+//   }
+// }

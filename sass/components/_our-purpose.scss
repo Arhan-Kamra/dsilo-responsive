@@ -1,0 +1,45 @@
+.our-purpose {
+  & > div.our-purpose-container {
+    max-width: 870px;
+    margin: 0 auto;
+
+    // background-color: blue;
+
+    color: $text-color;
+
+    & > div:nth-of-type(1) {
+      @include flex($gp: 40px);
+      padding-left: 20px;
+      padding-right: 20px;
+
+      & > div {
+        @include flex(column, $gp: 30px, $ai: flex-start);
+        flex-basis: calc(((100% - 80px) / 3) * 2);
+        // flex-grow: 1;
+
+        h3 {
+          @include smallcaps;
+
+          font-size: 24px;
+          line-height: 36px;
+
+          position: relative;
+
+          img {
+            position: absolute;
+            top: 3px;
+            left: -33px;
+
+            &:nth-child(1) {
+              left: -32px;
+            }
+          }
+        }
+
+        p {
+          @include p;
+        }
+      }
+    }
+  }
+}
