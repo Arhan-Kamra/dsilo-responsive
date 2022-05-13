@@ -1459,6 +1459,322 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   letter-spacing: 0em;
 }
 
+.solutions-banner {
+  height: 600px;
+  background-image: url("../../assets/images/solutions-banner-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.solutions-banner .solutions-banner-container {
+  color: #fff;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: min-content;
+  grid-gap: 100px;
+  column-gap: 20px;
+  grid-auto-flow: rows;
+  grid-auto-rows: min-content;
+}
+
+.document-insights-extraction > div.document-insights-extraction-container {
+  max-width: 870px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 130px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 27px) / 2);
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img:nth-child(1) {
+  left: -32px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(2) {
+  flex-basis: calc((100% - 27px) / 2);
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 80px) / 3);
+  flex-grow: 1;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div h3 img:nth-child(1) {
+  left: -32px;
+}
+.document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.contract-value-performance > div.contract-value-performance-container {
+  max-width: 870px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 130px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 27px) / 2);
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img:nth-child(1) {
+  left: -32px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(2) {
+  flex-basis: calc((100% - 27px) / 2);
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 80px) / 3);
+  flex-grow: 1;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div h3 img:nth-child(1) {
+  left: -32px;
+}
+.contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container {
+  max-width: 870px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 130px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 27px) / 2);
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) h3 img:nth-child(1) {
+  left: -32px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(2) {
+  flex-basis: calc((100% - 27px) / 2);
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-basis: calc((100% - 80px) / 3);
+  flex-grow: 1;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div h3 img {
+  position: absolute;
+  top: 3px;
+  left: -33px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div h3 img:nth-child(1) {
+  left: -32px;
+}
+.smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
 body {
   width: 100%;
 }
@@ -1620,6 +1936,40 @@ body {
 }
 .about-us .containerr footer {
   grid-area: 8/1/9/-1;
+  z-index: 1000001;
+}
+
+.solutions .containerr {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px repeat(8, 1fr) 150px;
+  grid-template-rows: min-content;
+  grid-gap: 100px;
+  column-gap: 20px;
+  grid-auto-flow: rows;
+  grid-auto-rows: min-content;
+  background-color: #000;
+}
+.solutions .containerr header {
+  grid-area: 1/2/2/-2;
+  z-index: 10000022342;
+}
+.solutions .containerr > section.solutions-banner {
+  grid-area: 2/1/3/-1;
+  margin-top: -189px;
+}
+.solutions .containerr > section.document-insights-extraction {
+  grid-area: 3/2/4/-2;
+}
+.solutions .containerr > section.contract-value-performance {
+  grid-area: 4/2/5/-2;
+}
+.solutions .containerr > section.smart-compliance-and-risk {
+  grid-area: 5/2/6/-2;
+}
+.solutions .containerr footer {
+  grid-area: 6/1/7/-1;
   z-index: 1000001;
 }
 

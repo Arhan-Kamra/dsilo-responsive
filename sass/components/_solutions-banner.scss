@@ -1,0 +1,14 @@
+.solutions-banner {
+  height: 600px;
+
+  background-image: url("../../assets/images/solutions-banner-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .solutions-banner-container {
+    color: $text-color;
+
+    @include grid($gtc: repeat(8, 1fr));
+  }
+}

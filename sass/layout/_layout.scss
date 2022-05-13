@@ -177,3 +177,39 @@ body {
     z-index: 1000001;
   }
 }
+
+.solutions .containerr {
+  position: relative;
+  @include grid;
+
+  background-color: #000;
+
+  header {
+    grid-area: 1 / 2 / 2 / -2;
+    z-index: 10000022342;
+  }
+
+  & > section {
+    &.solutions-banner {
+      grid-area: 2 / 1 / 3 / -1;
+      margin-top: -189px;
+    }
+
+    &.document-insights-extraction {
+      grid-area: 3 / 2 / 4 / -2;
+    }
+
+    &.contract-value-performance {
+      grid-area: 4 / 2 / 5 / -2;
+    }
+
+    &.smart-compliance-and-risk {
+      grid-area: 5 / 2 / 6 / -2;
+    }
+  }
+
+  footer {
+    grid-area: 6 / 1 / 7 / -1;
+    z-index: 1000001;
+  }
+}

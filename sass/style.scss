@@ -27,6 +27,12 @@
 @import "./components/our-advisors";
 @import "./components/our-story";
 
+// specific sections for solutions page
+@import "./components/solutions-banner";
+@import "./components/document-insights-extraction";
+@import "./components/contract-value-performance";
+@import "./components/smart-compliance-and-risk";
+
 @import "layout/layout";
 
 @import "responsive/mediaqueries";
