@@ -213,3 +213,35 @@ body {
     z-index: 1000001;
   }
 }
+
+.capabilities .containerr {
+  position: relative;
+  @include grid;
+
+  background-color: #000;
+
+  header {
+    grid-area: 1 / 2 / 2 / -2;
+    z-index: 10000022342;
+  }
+
+  & > section {
+    &.capabilities-banner {
+      grid-area: 2 / 2 / 3 / -2;
+      margin-top: -100px;
+    }
+
+    &.ai-platform {
+      grid-area: 3 / 2 / 4 / -2;
+    }
+
+    &.capabilities {
+      grid-area: 4 / 2 / 5 / -2;
+    }
+  }
+
+  footer {
+    grid-area: 5 / 1 / 6 / -1;
+    z-index: 1000001;
+  }
+}

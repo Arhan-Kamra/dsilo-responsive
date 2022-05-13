@@ -33,6 +33,11 @@
 @import "./components/contract-value-performance";
 @import "./components/smart-compliance-and-risk";
 
+// spcific sections for capabilites page
+@import "./components/capabilities-banner";
+@import "./components/ai-platform";
+@import "./components/capabilities";
+
 @import "layout/layout";
 
 @import "responsive/mediaqueries";
