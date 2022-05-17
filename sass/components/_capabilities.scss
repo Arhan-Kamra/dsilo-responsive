@@ -1,5 +1,6 @@
 .capabilities {
   & > div.capabilities-container {
+    // max-width: 100%; new comment
     max-width: 870px;
     margin: 0 auto;
 
@@ -54,14 +55,18 @@
     }
 
     & > div:nth-of-type(2) {
-      @include flex($gp: 36px);
-      padding-left: 18px;
-      padding-right: 18px;
+      //   @include flex($gp: 36px);
+      @include flex($gp: 0px);
+      //   flex-wrap: wrap;
+      //   padding-left: 18px;
+      //   padding-right: 18px;
 
       & > div {
         @include flex(column, $gp: 16px, $ai: flex-start);
-        flex-basis: calc((100% - 72px) / 3);
+        flex-basis: calc((100%) / 3);
+        padding: 0 18px;
         flex-grow: 1;
+        // min-width: 250px;
 
         h3 {
           @include h3;

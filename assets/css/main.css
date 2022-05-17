@@ -192,7 +192,20 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 80px;
+}
+@media only screen and (max-width: 991.98px) {
+  header.header-desktop {
+    display: none;
+  }
+}
+header.header-mobile {
+  display: none;
+}
+@media only screen and (max-width: 991.98px) {
+  header.header-mobile {
+    display: flex;
+  }
 }
 header > div {
   display: flex;
@@ -423,9 +436,8 @@ header > div button:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  flex-wrap: wrap;
 }
 .benefits > div.benefits-container > div:nth-of-type(2) > div {
   display: flex;
@@ -433,8 +445,9 @@ header > div button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .benefits > div.benefits-container > div:nth-of-type(2) > div h3 {
   font-size: 20px;
@@ -463,6 +476,27 @@ header > div button:hover {
 .just-video {
   position: relative;
   height: 420px;
+}
+.just-video::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 10;
+}
+.just-video::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 .just-video video {
   object-fit: cover;
@@ -831,6 +865,12 @@ footer > div:nth-of-type(1) {
   justify-content: space-between;
   align-items: stretch;
   gap: 16px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1301.98px) {
+  footer > div:nth-of-type(1) {
+    gap: 80px;
+  }
 }
 footer > div:nth-of-type(1) > div:nth-of-type(1) {
   flex-basis: 240px;
@@ -839,6 +879,11 @@ footer > div:nth-of-type(1) > div:nth-of-type(1) {
   justify-content: flex-start;
   align-items: stretch;
   gap: 48px;
+}
+@media only screen and (max-width: 1301.98px) {
+  footer > div:nth-of-type(1) > div:nth-of-type(1) {
+    order: 1;
+  }
 }
 footer > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) {
   display: flex;
@@ -896,6 +941,11 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) {
   justify-content: flex-start;
   align-items: stretch;
   gap: 16px;
+}
+@media only screen and (max-width: 1301.98px) {
+  footer > div:nth-of-type(1) > div:nth-of-type(3) {
+    order: -1;
+  }
 }
 footer > div:nth-of-type(1) > div:nth-of-type(3) h3 {
   font-size: 18px;
@@ -1026,10 +1076,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  align-items: center;
+  gap: 0;
 }
 .unnamed-section > div.unnamed-section-container > div > div:nth-of-type(1) {
   display: flex;
@@ -1037,7 +1085,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  flex-basis: calc((100% - 40px) / 3);
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .unnamed-section > div.unnamed-section-container > div > div:nth-of-type(1) h3 {
   font-size: 24px;
@@ -1064,7 +1114,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   letter-spacing: 0em;
 }
 .unnamed-section > div.unnamed-section-container > div > div:nth-of-type(2) {
-  flex-basis: calc((100% - 40px) / 3 * 2);
+  flex-basis: 66.66%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1109,17 +1159,19 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-purpose > div.our-purpose-container > div:nth-of-type(1) > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
-  flex-basis: calc((100% - 80px) / 3 * 2);
+  gap: 16px;
+  flex-basis: 66.66%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-purpose > div.our-purpose-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1161,17 +1213,19 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-values > div.our-values-container > div:nth-of-type(1) > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
-  flex-basis: calc((100% - 80px) / 3 * 2);
+  gap: 16px;
+  flex-basis: 66.66%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-values > div.our-values-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1196,9 +1250,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-values > div.our-values-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1206,8 +1260,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-values > div.our-values-container > div:nth-of-type(2) > div h3 {
   font-size: 20px;
@@ -1248,9 +1303,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(1) > div {
   display: flex;
@@ -1258,7 +1313,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 80px) / 3 * 2);
+  flex-basis: 66.66%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1289,10 +1346,10 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
+  gap: 0;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1300,7 +1357,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 8px;
-  flex-basis: calc((100% - 80px) / 3);
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 {
   font-size: 20px;
@@ -1310,6 +1369,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   font-size: 24px;
   line-height: 36px;
   position: relative;
+  z-index: 1;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(1) {
   position: absolute;
@@ -1319,6 +1379,12 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(1):nth-child(1) {
   left: -32px;
+}
+.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(2) {
+  filter: grayscale(100%);
+}
+.leadership-team > div.leadership-team-container > div:nth-of-type(2) > div h3 img:nth-of-type(2):hover {
+  filter: grayscale(0%);
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div p {
   font-size: 16px;
@@ -1349,9 +1415,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(1) > div {
   display: flex;
@@ -1359,7 +1425,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 80px) / 3 * 2);
+  flex-basis: 66.66%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1390,10 +1458,10 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
+  gap: 0;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1401,7 +1469,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 8px;
-  flex-basis: calc((100% - 80px) / 3);
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 {
   font-size: 20px;
@@ -1411,6 +1481,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   font-size: 24px;
   line-height: 36px;
   position: relative;
+  z-index: 1;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(1) {
   position: absolute;
@@ -1420,6 +1491,12 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(1):nth-child(1) {
   left: -32px;
+}
+.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(2) {
+  filter: grayscale(100%);
+}
+.our-advisors > div.our-advisors-container > div:nth-of-type(2) > div h3 img:nth-of-type(2):hover {
+  filter: grayscale(0%);
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div p {
   font-size: 16px;
@@ -1445,17 +1522,19 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .our-story > div.our-story-container > div:nth-of-type(1) > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
   flex-basis: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .our-story > div.our-story-container > div:nth-of-type(1) > div h3 {
   font-size: 24px;
@@ -1503,14 +1582,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   min-height: 600px;
   background-image: url("../../assets/images/solutions-banner-image.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 .solutions-banner > div.solutions-banner-container {
   max-width: 870px;
   margin: 0 auto;
   color: #fff;
-  padding-top: 189px;
+  padding-top: 210px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1523,10 +1601,11 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 48px;
-  padding-left: 20px;
+  padding-left: 0;
 }
 .solutions-banner > div.solutions-banner-container > div:nth-of-type(1) > div:first-of-type {
   max-width: 376px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1558,9 +1637,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .solutions-banner > div.solutions-banner-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1568,8 +1647,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .solutions-banner > div.solutions-banner-container > div:nth-of-type(2) > div h3 {
   font-size: 20px;
@@ -1611,9 +1691,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) {
   display: flex;
@@ -1622,6 +1702,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: flex-start;
   gap: 16px;
   flex-basis: calc((100% - 27px) / 2);
+  padding-left: 20px;
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
   font-size: 26px;
@@ -1666,8 +1747,13 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1675,16 +1761,15 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: 0em;
-  font-size: 24px;
-  line-height: 36px;
   position: relative;
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(2) > div h3 img {
@@ -1717,9 +1802,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) {
   display: flex;
@@ -1728,6 +1813,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: flex-start;
   gap: 16px;
   flex-basis: calc((100% - 27px) / 2);
+  padding-left: 20px;
+  padding-right: 28px;
 }
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
   font-size: 26px;
@@ -1765,9 +1852,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1775,16 +1862,15 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: 0em;
-  font-size: 24px;
-  line-height: 36px;
   position: relative;
 }
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(2) > div h3 img {
@@ -1817,9 +1903,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) {
   display: flex;
@@ -1828,6 +1914,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: flex-start;
   gap: 16px;
   flex-basis: calc((100% - 27px) / 2);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) > div:nth-of-type(1) h3 {
   font-size: 26px;
@@ -1865,9 +1953,9 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1875,16 +1963,15 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  flex-basis: calc((100% - 80px) / 3);
-  flex-grow: 1;
+  flex-basis: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: 0em;
-  font-size: 24px;
-  line-height: 36px;
   position: relative;
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(2) > div h3 img {
@@ -1902,11 +1989,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   letter-spacing: 0em;
 }
 
-.capabilities-banner {
-  background-image: url("../../assets/images/capabilities-container.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.capabilities-banner img {
+  max-width: 100%;
 }
 .capabilities-banner > div.capabilities-banner-container {
   max-width: 870px;
@@ -1918,7 +2002,6 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  height: 590px;
 }
 .capabilities-banner > div.capabilities-banner-container > div:nth-of-type(1),
 .capabilities-banner > div.capabilities-banner-container > div:nth-of-type(2) {
@@ -1994,7 +2077,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   position: relative;
 }
 .ai-platform > div:nth-of-type(2) img {
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2065,9 +2148,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 36px;
-  padding-left: 18px;
-  padding-right: 18px;
+  gap: 0px;
 }
 .capabilities > div.capabilities-container > div:nth-of-type(2) > div {
   display: flex;
@@ -2075,7 +2156,8 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  flex-basis: calc((100% - 72px) / 3);
+  flex-basis: 33.3333333333%;
+  padding: 0 18px;
   flex-grow: 1;
 }
 .capabilities > div.capabilities-container > div:nth-of-type(2) > div h3 {
@@ -2131,47 +2213,45 @@ body {
 
 .containerr .mid-line-containerr {
   position: absolute;
+  top: 90px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
+  height: 5960px;
   width: 100%;
-  max-width: 870px;
-  border: 0.5px solid #535252;
-  border-top: 0;
-  border-bottom: 0;
-  z-index: 1;
-  top: 89px;
-  height: calc(100% - 89px);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0px;
+  max-width: 871px;
+  background-image: url("../images/background-lines-light.png");
 }
-.containerr .mid-line-containerr > div {
-  width: 33.33%;
-  border-right: 0.5px solid #535252;
-  position: relative;
+@media only screen and (max-width: 870px) {
+  .containerr .mid-line-containerr {
+    background-image: none;
+  }
 }
-.containerr .mid-line-containerr > div .img1 {
-  position: absolute;
-  top: 1683px;
-  left: 0px;
-  transform: translateX(-50%);
+@media only screen and (max-width: 375px) {
+  .containerr .mid-line-containerr {
+    background-image: url("../images/background-lines-light--mobile.png");
+    max-width: 376px;
+  }
 }
-.containerr .mid-line-containerr > div .img3-1 {
-  position: absolute;
-  top: 5327px;
-  left: 0px;
-  transform: translateX(-50%);
+
+.home .containerr .mid-line-containerr {
+  height: 5870px;
 }
-.containerr .mid-line-containerr > div .img3-2 {
-  position: absolute;
-  top: 5327px;
-  right: 0px;
-  transform: translateX(50%);
+
+.about-us .containerr .mid-line-containerr {
+  height: 4850px;
 }
-.containerr .mid-line-containerr > div:nth-of-type(3) {
-  border-right: 0;
+
+.capabilities .containerr .mid-line-containerr {
+  height: 4220px;
+}
+
+.solutions .containerr .mid-line-containerr {
+  height: 4540px;
+}
+
+.technology .containerr .mid-line-containerr {
+  height: 4660px;
 }
 
 .home .containerr {
@@ -2198,13 +2278,13 @@ body {
   grid-area: 3/2/4/-1;
 }
 .home .containerr > section.benefits {
-  grid-area: 4/2/5/-2;
+  grid-area: 4/1/5/-1;
 }
 .home .containerr > section.just-video {
   grid-area: 5/1/6/-1;
 }
 .home .containerr > section.solutions {
-  grid-area: 6/2/7/-2;
+  grid-area: 6/1/7/-1;
 }
 .home .containerr > section.platform {
   grid-area: 7/2/8/-2;
@@ -2242,7 +2322,7 @@ body {
   grid-area: 2/2/3/-2;
 }
 .technology .containerr > section.unnamed-section {
-  grid-area: 3/2/4/-2;
+  grid-area: 3/1/4/-1;
 }
 .technology .containerr footer {
   grid-area: 4/1/5/-1;
@@ -2270,19 +2350,20 @@ body {
   margin-top: -100px;
 }
 .about-us .containerr > section.our-purpose {
-  grid-area: 3/2/4/-2;
+  grid-area: 3/1/4/-1;
+  margin-top: -100px;
 }
 .about-us .containerr > section.our-values {
-  grid-area: 4/2/5/-2;
+  grid-area: 4/1/5/-1;
 }
 .about-us .containerr > section.leadership-team {
-  grid-area: 5/2/6/-2;
+  grid-area: 5/1/6/-1;
 }
 .about-us .containerr > section.our-advisors {
-  grid-area: 6/2/7/-2;
+  grid-area: 6/1/7/-1;
 }
 .about-us .containerr > section.our-story {
-  grid-area: 7/2/8/-2;
+  grid-area: 7/1/8/-1;
 }
 .about-us .containerr footer {
   grid-area: 8/1/9/-1;
@@ -2310,13 +2391,13 @@ body {
   margin-top: -189px;
 }
 .solutions .containerr > section.document-insights-extraction {
-  grid-area: 3/2/4/-2;
+  grid-area: 3/1/4/-1;
 }
 .solutions .containerr > section.contract-value-performance {
-  grid-area: 4/2/5/-2;
+  grid-area: 4/1/5/-1;
 }
 .solutions .containerr > section.smart-compliance-and-risk {
-  grid-area: 5/2/6/-2;
+  grid-area: 5/1/6/-1;
 }
 .solutions .containerr footer {
   grid-area: 6/1/7/-1;
@@ -2347,10 +2428,13 @@ body {
   grid-area: 3/2/4/-2;
 }
 .capabilities .containerr > section.capabilities {
-  grid-area: 4/2/5/-2;
+  grid-area: 4/1/5/-1;
+}
+.capabilities .containerr > section.capabilities.capabilities2 {
+  grid-area: 5/1/6/-1;
 }
 .capabilities .containerr footer {
-  grid-area: 5/1/6/-1;
+  grid-area: 6/1/7/-1;
   z-index: 1000001;
 }
 

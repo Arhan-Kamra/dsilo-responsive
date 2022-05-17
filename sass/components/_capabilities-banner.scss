@@ -1,8 +1,13 @@
 .capabilities-banner {
-  background-image: url("../../assets/images/capabilities-container.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  //   background-image: url("../../assets/images/capabilities-container.svg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+
+  img {
+    max-width: 100%;
+  }
+
   & > div.capabilities-banner-container {
     max-width: 870px;
     margin: 0 auto;
@@ -13,7 +18,7 @@
 
     // background-color: blue;
 
-    height: 590px;
+    // height: 590px;
 
     > div:nth-of-type(1),
     > div:nth-of-type(2) {

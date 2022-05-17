@@ -1,8 +1,20 @@
 header {
+  &.header-desktop {
+    @media only screen and (max-width: 991.98px) {
+      display: none;
+    }
+  }
+  &.header-mobile {
+    display: none;
+
+    @media only screen and (max-width: 991.98px) {
+      display: flex;
+    }
+  }
   padding-top: 28px;
   padding-bottom: 28px;
   //   border: 1px solid #fff;
-  @include flex($jc: space-between, $ai: center);
+  @include flex($jc: space-between, $ai: center, $gp: 80px);
 
   & > div {
     @include flex($ai: center, $gp: 50px);

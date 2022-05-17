@@ -9,13 +9,18 @@
     @include flex(column, $gp: 130px);
 
     & > div:nth-of-type(1) {
-      @include flex($gp: 27px, $ai: flex-end);
-      padding-left: 20px;
-      padding-right: 20px;
+      //   @include flex($gp: 27px, $ai: flex-end); new comment
+      @include flex($gp: 0, $ai: flex-end);
+      //   padding-left: 20px; new comment
+      padding-left: 0;
+      //   padding-right: 20px; new comment
+      padding-right: 0;
 
       & > div:nth-of-type(1) {
         @include flex(column, $gp: 16px, $ai: flex-start);
         flex-basis: calc((100% - 27px) / 2);
+        padding-left: 20px;
+        padding-right: 28px;
         // flex-grow: 1;
 
         h3 {
@@ -54,20 +59,26 @@
     }
 
     & > div:nth-of-type(2) {
-      @include flex($gp: 40px);
-      padding-left: 20px;
-      padding-right: 20px;
+      //   @include flex($gp: 40px); new comment
+      @include flex($gp: 0);
+      //   padding-left: 20px; new comment
+      padding-left: 0;
+      //   padding-right: 20px; new comment
+      padding-right: 0;
 
       & > div {
         @include flex(column, $gp: 16px, $ai: flex-start);
-        flex-basis: calc((100% - 80px) / 3);
-        flex-grow: 1;
+        // flex-basis: calc((100% - 80px) / 3); new comment
+        flex-basis: 33.33%;
+        // flex-grow: 1; new comment
+        padding-left: 20px;
+        padding-right: 20px;
 
         h3 {
-          @include h3;
+          @include h4;
 
-          font-size: 24px;
-          line-height: 36px;
+          //   font-size: 24px;
+          //   line-height: 36px;
 
           position: relative;
 
