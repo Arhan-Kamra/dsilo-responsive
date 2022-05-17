@@ -26,3 +26,11 @@ prevIcon.innerHTML =
   "<img src='./assets/images/dot.svg' style='position:absolute;top:-5px;left:-16px;opacity:0.6' /><img src='./assets/images/previous-icon.svg' />";
 nextIcon.innerHTML =
   "<img src='./assets/images/next-icon.svg' /><img src='./assets/images/dot.svg' style='position:absolute;top:-5px;right:-16px;opacity:0.6' />";
+
+document.querySelector(".mid-line-containerr").addEventListener(
+  "mouseover",
+  () => {
+    console.log("hover");
+  },
+  false
+);

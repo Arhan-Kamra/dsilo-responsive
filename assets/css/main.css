@@ -225,6 +225,16 @@ header > div > ul > li {
   color: #fff;
   font-size: 16px;
 }
+header > div > ul > li > a {
+  color: rgb(121, 0, 192);
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 150ms ease-in 0ms;
+  color: #fff;
+  font-size: 16px;
+}
 header > div > ul > li > ul {
   display: none;
 }
@@ -266,7 +276,7 @@ header > div button:hover {
 }
 .banner > div:nth-of-type(2) {
   grid-area: 1/5/2/-2;
-  z-index: 1;
+  z-index: 10;
   padding-top: 160px;
   padding-bottom: 160px;
   display: flex;
@@ -733,6 +743,7 @@ header > div button:hover {
   flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
+  z-index: 10;
 }
 .technology > div.technology-container > div:nth-of-type(2) > div {
   background-color: rgb(13, 14, 18);
@@ -1350,6 +1361,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
+  z-index: 10;
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(2) > div {
   display: flex;
@@ -1462,6 +1474,7 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
+  z-index: 152;
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(2) > div {
   display: flex;

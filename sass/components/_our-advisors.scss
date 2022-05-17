@@ -157,6 +157,7 @@
       padding-left: 0;
       //   padding-right: 20px; new comment
       padding-right: 0;
+      z-index: 152;
 
       & > div {
         @include flex(column, $gp: 8px, $ai: flex-start);

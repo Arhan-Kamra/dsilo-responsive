@@ -23,6 +23,11 @@ header {
 
       & > li {
         @include li;
+
+        > a {
+          @include a;
+          @include li;
+        }
         & > ul {
           display: none;
         }
