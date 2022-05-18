@@ -423,6 +423,26 @@ header > div button:hover {
   align-items: stretch;
   gap: 72px;
 }
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .benefits > div.benefits-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .benefits > div.benefits-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .benefits > div.benefits-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .benefits > div.benefits-container {
+    max-width: 300px;
+  }
+}
 .benefits > div.benefits-container > div:nth-of-type(1) {
   display: flex;
   flex-direction: column;
@@ -531,6 +551,26 @@ header > div button:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 72px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .solutions > div.solutions-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .solutions > div.solutions-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .solutions > div.solutions-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .solutions > div.solutions-container {
+    max-width: 300px;
+  }
 }
 .solutions > div.solutions-container > div:nth-of-type(1) {
   display: flex;
@@ -716,6 +756,26 @@ header > div button:hover {
   align-items: stretch;
   gap: 160px;
 }
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .technology > div.technology-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .technology > div.technology-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .technology > div.technology-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .technology > div.technology-container {
+    max-width: 300px;
+  }
+}
 .technology > div.technology-container > div:nth-of-type(1) {
   display: flex;
   flex-direction: column;
@@ -809,6 +869,26 @@ header > div button:hover {
 .testimonials > div.testimonials-container {
   max-width: 870px;
   margin: 0 auto;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .testimonials > div.testimonials-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .testimonials > div.testimonials-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .testimonials > div.testimonials-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .testimonials > div.testimonials-container {
+    max-width: 300px;
+  }
 }
 .testimonials .testimonial-owl-carousel {
   position: relative;
@@ -1161,6 +1241,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: stretch;
   gap: 140px;
 }
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .unnamed-section > div.unnamed-section-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .unnamed-section > div.unnamed-section-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .unnamed-section > div.unnamed-section-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .unnamed-section > div.unnamed-section-container {
+    max-width: 300px;
+  }
+}
 .unnamed-section > div.unnamed-section-container > div {
   display: flex;
   flex-direction: row;
@@ -1244,6 +1344,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   background-size: cover;
   height: 590px;
 }
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .about-us-banner > div.about-us-banner-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .about-us-banner > div.about-us-banner-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .about-us-banner > div.about-us-banner-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about-us-banner > div.about-us-banner-container {
+    max-width: 300px;
+  }
+}
 .about-us-banner > div.about-us-banner-container > div:nth-of-type(1) {
   font-size: 24px;
   font-weight: 700;
@@ -1262,6 +1382,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   max-width: 870px;
   margin: 0 auto;
   color: #fff;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .our-purpose > div.our-purpose-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .our-purpose > div.our-purpose-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .our-purpose > div.our-purpose-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .our-purpose > div.our-purpose-container {
+    max-width: 300px;
+  }
 }
 .our-purpose > div.our-purpose-container > div:nth-of-type(1) {
   display: flex;
@@ -1327,6 +1467,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 40px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .our-values > div.our-values-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .our-values > div.our-values-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .our-values > div.our-values-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .our-values > div.our-values-container {
+    max-width: 300px;
+  }
 }
 .our-values > div.our-values-container > div:nth-of-type(1) {
   display: flex;
@@ -1417,12 +1577,6 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   letter-spacing: 0em;
 }
 
-@media only screen and (max-width: 870px) {
-  .leadership-team {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .leadership-team > div.leadership-team-container {
   max-width: 870px;
   margin: 0 auto;
@@ -1432,6 +1586,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: stretch;
   gap: 40px;
   color: #fff;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .leadership-team > div.leadership-team-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .leadership-team > div.leadership-team-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .leadership-team > div.leadership-team-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .leadership-team > div.leadership-team-container {
+    max-width: 300px;
+  }
 }
 .leadership-team > div.leadership-team-container > div:nth-of-type(1) {
   display: flex;
@@ -1573,12 +1747,6 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   color: rgb(189, 189, 189);
 }
 
-@media only screen and (max-width: 870px) {
-  .our-advisors {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .our-advisors > div.our-advisors-container {
   max-width: 870px;
   margin: 0 auto;
@@ -1588,6 +1756,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: stretch;
   gap: 40px;
   color: #fff;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .our-advisors > div.our-advisors-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .our-advisors > div.our-advisors-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .our-advisors > div.our-advisors-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .our-advisors > div.our-advisors-container {
+    max-width: 300px;
+  }
 }
 .our-advisors > div.our-advisors-container > div:nth-of-type(1) {
   display: flex;
@@ -1729,16 +1917,30 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   color: rgb(189, 189, 189);
 }
 
-@media only screen and (max-width: 870px) {
-  .our-story {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .our-story > div.our-story-container {
   max-width: 870px;
   margin: 0 auto;
   color: #fff;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .our-story > div.our-story-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .our-story > div.our-story-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .our-story > div.our-story-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .our-story > div.our-story-container {
+    max-width: 300px;
+  }
 }
 .our-story > div.our-story-container > div:nth-of-type(1) {
   display: flex;
@@ -1817,6 +2019,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 48px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .solutions-banner > div.solutions-banner-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .solutions-banner > div.solutions-banner-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .solutions-banner > div.solutions-banner-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .solutions-banner > div.solutions-banner-container {
+    max-width: 300px;
+  }
 }
 .solutions-banner > div.solutions-banner-container > div:nth-of-type(1) {
   display: flex;
@@ -1908,6 +2130,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 130px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .document-insights-extraction > div.document-insights-extraction-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .document-insights-extraction > div.document-insights-extraction-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .document-insights-extraction > div.document-insights-extraction-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .document-insights-extraction > div.document-insights-extraction-container {
+    max-width: 300px;
+  }
 }
 .document-insights-extraction > div.document-insights-extraction-container > div:nth-of-type(1) {
   display: flex;
@@ -2020,6 +2262,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   align-items: stretch;
   gap: 130px;
 }
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .contract-value-performance > div.contract-value-performance-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .contract-value-performance > div.contract-value-performance-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .contract-value-performance > div.contract-value-performance-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .contract-value-performance > div.contract-value-performance-container {
+    max-width: 300px;
+  }
+}
 .contract-value-performance > div.contract-value-performance-container > div:nth-of-type(1) {
   display: flex;
   flex-direction: row;
@@ -2120,6 +2382,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 130px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .smart-compliance-and-risk > div.smart-compliance-and-risk-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .smart-compliance-and-risk > div.smart-compliance-and-risk-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .smart-compliance-and-risk > div.smart-compliance-and-risk-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .smart-compliance-and-risk > div.smart-compliance-and-risk-container {
+    max-width: 300px;
+  }
 }
 .smart-compliance-and-risk > div.smart-compliance-and-risk-container > div:nth-of-type(1) {
   display: flex;
@@ -2225,6 +2507,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .capabilities-banner > div.capabilities-banner-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .capabilities-banner > div.capabilities-banner-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .capabilities-banner > div.capabilities-banner-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .capabilities-banner > div.capabilities-banner-container {
+    max-width: 300px;
+  }
 }
 .capabilities-banner > div.capabilities-banner-container > div:nth-of-type(1),
 .capabilities-banner > div.capabilities-banner-container > div:nth-of-type(2) {
@@ -2337,6 +2639,26 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   justify-content: flex-start;
   align-items: stretch;
   gap: 72px;
+}
+@media only screen and (min-width: 700px) and (max-width: 870px) {
+  .capabilities > div.capabilities-container {
+    max-width: 670px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+  .capabilities > div.capabilities-container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .capabilities > div.capabilities-container {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .capabilities > div.capabilities-container {
+    max-width: 300px;
+  }
 }
 @media only screen and (max-width: 991.98px) {
   .capabilities > div.capabilities-container {

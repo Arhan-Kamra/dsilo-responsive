@@ -1,0 +1,50 @@
+header {
+  &.header-desktop {
+    @media only screen and (max-width: 991.98px) {
+      display: none;
+    }
+  }
+  &.header-mobile {
+    display: none;
+
+    @media only screen and (max-width: 991.98px) {
+      display: flex;
+    }
+
+    @media only screen and (max-width: 575.98px) {
+      a:nth-of-type(2) img {
+        width: 132px;
+      }
+    }
+  }
+  padding-top: 28px;
+  padding-bottom: 28px;
+  //   border: 1px solid #fff;
+  @include flex($jc: space-between, $ai: center, $gp: 80px);
+
+  & > div {
+    @include flex($ai: center, $gp: 50px);
+    & > ul {
+      @include flex($gp: 50px);
+
+      & > li {
+        @include li;
+
+        > a {
+          @include a;
+          @include li;
+        }
+        & > ul {
+          display: none;
+        }
+      }
+    }
+    button {
+      @include button-default-style;
+
+      &:hover {
+        @include button-default-style-hover;
+      }
+    }
+  }
+}
