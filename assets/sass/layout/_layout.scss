@@ -47,11 +47,32 @@ body {
 }
 
 .about-us .containerr .mid-line-containerr {
-  height: 4490px;
+  height: 4710px;
+
+  @media only screen and (max-width: 747px) {
+    height: 6380px;
+  }
+
+  @media only screen and (min-width: 747px) and (max-width: 870px) {
+    height: 5540px;
+  }
 }
 
 .capabilities .containerr .mid-line-containerr {
-  height: 3850px;
+  height: 3950px;
+
+  @media only screen and (max-width: 375px) {
+    height: 7870px;
+  }
+  @media only screen and (max-width: 540px) {
+    height: 6910px;
+  }
+  @media only screen and (max-width: 991.98px) {
+    height: 5865px;
+  }
+  @media only screen and (min-width: 870px) and (max-width: 991.98px) {
+    height: 5800px;
+  }
 }
 
 .solutions .containerr .mid-line-containerr {
@@ -59,7 +80,11 @@ body {
 }
 
 .technology .containerr .mid-line-containerr {
-  height: 4300px;
+  height: 4400px;
+
+  @media only screen and (max-width: 991.98px) {
+    height: 5800px;
+  }
 }
 
 .home .containerr {

@@ -1,5 +1,11 @@
 header {
   &.header-desktop {
+    @media only screen and (max-width: 1199.98px) {
+      grid-area: 1 / 1 / 2 / -1 !important;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
     @media only screen and (max-width: 991.98px) {
       display: none;
     }
