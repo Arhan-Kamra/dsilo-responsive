@@ -1584,12 +1584,6 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
   letter-spacing: 0em;
 }
 
-@media only screen and (max-width: 991.98px) {
-  .our-values {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .our-values > div.our-values-container {
   max-width: 870px;
   margin: 0 auto;
@@ -2922,12 +2916,6 @@ footer > div:nth-of-type(1) > div:nth-of-type(3) form input[type=button]:hover {
 @media only screen and (max-width: 375px) {
   .capabilities > div.capabilities-container {
     max-width: 300px;
-  }
-}
-@media only screen and (max-width: 991.98px) {
-  .capabilities > div.capabilities-container {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 .capabilities > div.capabilities-container > div:nth-of-type(1) {
