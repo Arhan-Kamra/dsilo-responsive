@@ -3146,6 +3146,7 @@ body {
 }
 
 .capabilities .containerr .mid-line-containerr {
+  display: none;
   height: 3950px;
 }
 @media only screen and (max-width: 375px) {
