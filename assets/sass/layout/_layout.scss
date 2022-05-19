@@ -94,6 +94,22 @@ body {
 
 .solutions .containerr .mid-line-containerr {
   height: 4170px;
+
+  @media only screen and (max-width: 870px) {
+    height: 5120px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    height: 6370px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    height: 7340px;
+  }
+
+  @media only screen and (max-width: 375px) {
+    height: 8450px;
+  }
 }
 
 .technology .containerr .mid-line-containerr {

@@ -3178,6 +3178,26 @@ body {
 .solutions .containerr .mid-line-containerr {
   height: 4170px;
 }
+@media only screen and (max-width: 870px) {
+  .solutions .containerr .mid-line-containerr {
+    height: 5120px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .solutions .containerr .mid-line-containerr {
+    height: 6370px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .solutions .containerr .mid-line-containerr {
+    height: 7340px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .solutions .containerr .mid-line-containerr {
+    height: 8450px;
+  }
+}
 
 .technology .containerr .mid-line-containerr {
   height: 4400px;
