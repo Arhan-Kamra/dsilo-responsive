@@ -66,12 +66,18 @@
     & > div:nth-of-type(2) {
       //   @include flex($gp: 40px); new comment
       @include flex($gp: 0);
+      @media only screen and (max-width: 767.98px) {
+        @include flex(column, $gp: 48px);
+      }
       //   padding-left: 20px; new comment
       padding-left: 0;
       //   padding-right: 20px; new comment
       padding-right: 0;
 
       & > div {
+        @media only screen and (max-width: 575.98px) {
+          width: 200px;
+        }
         @include flex(column, $gp: 16px, $ai: flex-start);
         // flex-basis: calc((100% - 80px) / 3); new comment
         flex-basis: 33.33%;
@@ -84,6 +90,11 @@
 
           font-size: 24px;
           line-height: 36px;
+
+          @media only screen and (max-width: 575.98px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
 
           position: relative;
 

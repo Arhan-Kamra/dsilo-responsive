@@ -25,6 +25,10 @@
     color: $text-color;
     @include flex(column, $gp: 160px);
 
+    @media only screen and (max-width: 767.98px) {
+      gap: 260px;
+    }
+
     & > div:nth-of-type(1) {
       @include flex(column, $ai: center);
       .smallcaps {
@@ -40,6 +44,11 @@
 
     & > div:nth-of-type(2) {
       @include flex($gp: 10px);
+
+      @media only screen and (max-width: 767.98px) {
+        @include flex(column, $gp: 88px);
+      }
+
       flex-wrap: wrap;
       padding-left: 10px;
       padding-right: 10px;
@@ -49,6 +58,11 @@
         background-color: rgba(13, 14, 18, 1);
         border-radius: 8px;
         flex-basis: calc((100% - 40px) / 3);
+
+        @media only screen and (max-width: 767.98px) {
+          flex-basis: 130px;
+        }
+
         height: 130px;
         padding-bottom: 20px;
         flex-grow: 1;
@@ -77,6 +91,7 @@
 
     h4 {
       @include pbig;
+      text-align: center;
       text-transform: capitalize;
     }
   }

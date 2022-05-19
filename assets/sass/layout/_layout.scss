@@ -43,7 +43,23 @@ body {
 }
 
 .home .containerr .mid-line-containerr {
-  height: 5500px;
+  height: 5660px;
+
+  @media only screen and (max-width: 991.98px) {
+    height: 6150px;
+  }
+
+  @media only screen and (min-width: 747px) and (max-width: 767px) {
+    height: 8260px;
+  }
+
+  @media only screen and (max-width: 747px) {
+    height: 8980px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    height: 9740px;
+  }
 }
 
 .about-us .containerr .mid-line-containerr {
@@ -136,6 +152,10 @@ body {
     }
     &.platform {
       grid-area: 7 / 2 / 8 / -2;
+
+      @media only screen and (max-width: 991.98px) {
+        row-gap: 44px;
+      }
     }
     &.technology {
       grid-area: 8 / 2 / 9 / -2;
@@ -148,6 +168,11 @@ body {
   footer {
     grid-area: 10 / 1 / 11 / -1;
     margin-top: -100px;
+
+    @media only screen and (max-width: 767.98px) {
+      margin-top: 0;
+    }
+
     z-index: 1000001;
   }
 }

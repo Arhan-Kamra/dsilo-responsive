@@ -41,6 +41,9 @@
     & > div:nth-of-type(2) {
       //   @include flex($gp: 40px); new comment
       @include flex($gp: 0);
+      @media only screen and (max-width: 767.98px) {
+        @include flex(column, $gp: 72px);
+      }
 
       flex-wrap: wrap;
 
