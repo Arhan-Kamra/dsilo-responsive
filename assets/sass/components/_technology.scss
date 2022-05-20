@@ -75,16 +75,14 @@
 
         &:hover {
           & > img {
-            bottom: 40px;
+            top: -120px;
           }
         }
 
         & > img {
           position: absolute;
-
-          &:hover {
-            bottom: 40px;
-          }
+          top: -100px;
+          transition: all 300ms ease-in-out 0ms;
         }
       }
     }
