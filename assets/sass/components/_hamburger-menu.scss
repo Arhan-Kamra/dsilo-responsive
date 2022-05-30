@@ -36,6 +36,18 @@ body {
       > li {
         & > ul {
           display: none;
+          padding-left: 36px;
+          padding-right: 36px;
+
+          li {
+            &:not(:last-child) {
+              border-bottom: 1px solid #322e2e;
+            }
+
+            div {
+              padding-left: 0;
+            }
+          }
         }
         &:not(:last-of-type) {
           border-bottom: 1px solid #322e2e;
@@ -74,16 +86,17 @@ body {
             & > div {
               padding-top: 18px;
               padding-bottom: 18px;
-              padding-left: 36px;
+              //   padding-left: 36px;
+              padding-left: 0;
               padding-right: 36px;
               display: flex;
               position: relative;
               justify-content: space-between;
               a {
-                @include body-link-default;
+                @include footer-link-default;
 
                 @media only screen and (max-width: 575.98px) {
-                  @include m-body-link-default;
+                  @include m-footer-link-default;
                 }
                 color: $heading-color;
               }

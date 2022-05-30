@@ -381,6 +381,14 @@ body > div:nth-of-type(1) > div:nth-of-type(1) > a {
 }
 body > div:nth-of-type(1) > ul > li > ul {
   display: none;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+body > div:nth-of-type(1) > ul > li > ul li:not(:last-child) {
+  border-bottom: 1px solid #322e2e;
+}
+body > div:nth-of-type(1) > ul > li > ul li div {
+  padding-left: 0;
 }
 body > div:nth-of-type(1) > ul > li:not(:last-of-type) {
   border-bottom: 1px solid #322e2e;
@@ -422,7 +430,7 @@ body > div:nth-of-type(1) > ul > li > div > span {
 body > div:nth-of-type(1) > ul > li > ul li > div {
   padding-top: 18px;
   padding-bottom: 18px;
-  padding-left: 36px;
+  padding-left: 0;
   padding-right: 36px;
   display: flex;
   position: relative;
@@ -431,8 +439,8 @@ body > div:nth-of-type(1) > ul > li > ul li > div {
 body > div:nth-of-type(1) > ul > li > ul li > div a {
   font-family: Roboto;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   letter-spacing: 0;
   text-transform: capitalize;
   text-decoration: none;
@@ -442,8 +450,8 @@ body > div:nth-of-type(1) > ul > li > ul li > div a {
   body > div:nth-of-type(1) > ul > li > ul li > div a {
     font-family: Roboto;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
     letter-spacing: 0;
     text-transform: capitalize;
     text-decoration: none;
