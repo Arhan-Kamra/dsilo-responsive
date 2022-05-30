@@ -24,6 +24,13 @@
   color: $text-color;
 
   > div:nth-of-type(2) {
+    @media only screen and (max-width: 575.98px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      position: relative;
+      top: 150px;
+    }
+
     grid-area: 1 / 5 / 2 / -2;
     padding-top: 160px;
     padding-bottom: 160px;
@@ -46,32 +53,35 @@
 
     @include flex(column, $ai: flex-start);
     h1 {
-      @include h1;
-      font-size: 56px;
-      line-height: 56px;
+      @include heading-level-1-default;
+      //   font-size: 56px;
+      //   line-height: 56px;
 
       @media only screen and (max-width: 575.98px) {
-        font-size: 36px;
-        line-height: 48px;
+        @include m-heading-level-1-default;
       }
 
       span {
         color: transparent;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-color: $heading-color;
       }
     }
 
     h3 {
-      @include h3;
+      @include paragraph-default;
 
       @media only screen and (max-width: 575.98px) {
-        font-size: 16px;
-        line-height: 24px;
+        @include m-paragraph-default;
       }
     }
 
     button {
+      @include body-link-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-body-link-default;
+      }
       @include button-default-style;
       padding-top: 12px;
       padding-bottom: 12px;

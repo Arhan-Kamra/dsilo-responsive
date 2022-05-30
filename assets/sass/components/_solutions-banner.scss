@@ -2,27 +2,39 @@
   min-height: 600px;
 
   background-image: url("../../assets/images/solutions-banner-image.png");
+
+  @media only screen and (max-width: 575.98px) {
+    background-image: url("../../assets/images/solutions-banner-image-mobile.jpg");
+  }
   background-repeat: no-repeat;
   //   background-position: center;
   background-size: cover;
 
+  @media only screen and (max-width: 991.98px) {
+    background-size: contain;
+  }
+
   & > div.solutions-banner-container {
-    max-width: 870px;
+    max-width: calc(870px - 30px);
 
     @media only screen and (min-width: 700px) and (max-width: 870px) {
       max-width: 670px;
+      max-width: calc(670px - 30px);
     }
 
     @media only screen and (min-width: 540px) and (max-width: 700px) {
       max-width: 540px;
+      max-width: calc(540px - 30px);
     }
 
     @media only screen and (min-width: 375px) and (max-width: 540px) {
       max-width: 375px;
+      max-width: calc(375px - 30px);
     }
 
     @media only screen and (max-width: 375px) {
       max-width: 300px;
+      max-width: calc(300px - 30px);
     }
 
     margin: 0 auto;
@@ -45,8 +57,12 @@
         @include flex(column, $ai: flex-start);
 
         h3 {
-          @include smallcaps;
-          font-size: 22px;
+          @include smallcaps-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-smallcaps-default;
+          }
+          //   font-size: 22px;
 
           position: relative;
 
@@ -58,7 +74,12 @@
         }
 
         p {
-          @include p;
+          color: $paragraph-color;
+          @include paragraph-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-paragraph-default;
+          }
         }
       }
     }
@@ -86,14 +107,10 @@
         padding-right: 20px;
 
         h3 {
-          @include h3;
-
-          font-size: 24px;
-          line-height: 36px;
+          @include heading-level-4-default;
 
           @media only screen and (max-width: 575.98px) {
-            font-size: 18px;
-            line-height: 26px;
+            @include m-heading-level-4-default;
           }
 
           position: relative;
@@ -111,7 +128,11 @@
         }
 
         p {
-          @include p;
+          @include paragraph-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-paragraph-default;
+          }
         }
       }
     }

@@ -1,21 +1,25 @@
 .unnamed-section {
   & > div.unnamed-section-container {
-    max-width: 870px;
+    max-width: calc(870px - 30px);
 
     @media only screen and (min-width: 700px) and (max-width: 870px) {
       max-width: 670px;
+      max-width: calc(670px - 30px);
     }
 
     @media only screen and (min-width: 540px) and (max-width: 700px) {
       max-width: 540px;
+      max-width: calc(540px - 30px);
     }
 
     @media only screen and (min-width: 375px) and (max-width: 540px) {
       max-width: 375px;
+      max-width: calc(375px - 30px);
     }
 
     @media only screen and (max-width: 375px) {
       max-width: 300px;
+      max-width: calc(300px - 30px);
     }
 
     margin: 0 auto;
@@ -45,9 +49,13 @@
         // flex-grow: 1;
 
         h3 {
-          @include smallcaps;
-          font-size: 22px;
-          line-height: 24px;
+          @include smallcaps-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-smallcaps-default;
+          }
+          font-size: 24px;
+          line-height: 32px;
 
           //   font-size: 24px;
           //   line-height: 36px;
@@ -66,7 +74,12 @@
         }
 
         p {
-          @include p;
+          color: $paragraph-color;
+          @include paragraph-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-paragraph-default;
+          }
         }
       }
       & > div:nth-of-type(2) {
@@ -76,7 +89,8 @@
         @include flex($jc: center, $ai: center);
 
         img {
-          max-width: 100%;
+          //   max-width: 100%;
+          max-width: 381px;
         }
       }
 

@@ -1,27 +1,4 @@
 // Typography styles
-@mixin h1 {
-  font-size: 68px;
-  font-weight: 700;
-  line-height: 68px;
-  letter-spacing: 0em;
-  text-transform: uppercase;
-}
-
-@mixin h2 {
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-transform: capitalize;
-  color: rgba(121, 0, 192, 1);
-}
-
-@mixin h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-}
 
 @mixin h3big {
   font-size: 38px;
@@ -30,46 +7,196 @@
   letter-spacing: 0em;
 }
 
-@mixin h4 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-}
-
-@mixin p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-}
-
-@mixin pbig {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-}
-
-@mixin smallcaps {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-@mixin bigcaps {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 90px;
-  letter-spacing: 0em;
-  text-transform: uppercase;
-}
-
 @mixin placeholder {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: 0em;
+  color: #626262;
+}
+
+// web typography styles
+@mixin heading-level-1-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 76px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@mixin heading-level-2-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin heading-level-3-default {
+  font-family: Roboto;
+  font-weight: medium;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin heading-level-4-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin heading-level-4-small {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin paragraph-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin body-link-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin footer-link-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin smallcaps-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@mixin smallcaps-default-with-ls {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+// mobile typography styles
+@mixin m-heading-level-1-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@mixin m-heading-level-2-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin m-heading-level-3-default {
+  font-family: Roboto;
+  font-weight: medium;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin m-heading-level-4-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin m-heading-level-4-small {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin m-paragraph-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@mixin m-body-link-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin m-footer-link-default {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin m-smallcaps-default {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@mixin m-smallcaps-default-with-ls {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }

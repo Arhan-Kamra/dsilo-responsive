@@ -9,13 +9,16 @@
 
 // mixin for default grid
 @mixin grid(
-  $gtc: 150px repeat(8, 1fr) 150px,
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 125px)) 1fr,
   $gtr: min-content,
   $gg: 100px,
   $cg: 20px,
   $gar: min-content
 ) {
   width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: $gtc;
   grid-template-rows: $gtr;
@@ -23,6 +26,140 @@
   column-gap: $cg;
   grid-auto-flow: rows;
   grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-above-1200(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 125px)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-above-1400(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 147.5px)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-above-991(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 102.5px)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-above-768(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 72.5px)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-above-576(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  $gtc: 1fr repeat(8, minmax(1px, 50px)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
+}
+
+// mixin for default grid
+@mixin grid-below-576(
+  //   $gtc: 150px repeat(8, 1fr) 150px,
+  //   $gtc: 1fr repeat(8, minmax(1px, 100%)) 1fr,
+  $gtc: 1fr repeat(8, calc((100% - 140px) / 8)) 1fr,
+  $gtr: min-content,
+  $gg: 100px,
+  $cg: 20px,
+  $gar: min-content
+) {
+  width: 100%;
+  //   max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+  column-gap: $cg;
+  grid-auto-flow: rows;
+  grid-auto-rows: $gar;
+  //   border: 4px solid #fff;
 }
 
 // mixin for default li styling
@@ -44,8 +181,8 @@
 // mixin for default hover state of anchor link
 @mixin ahover($clr: $text-color, $fsz: 16px, $lh: 24px) {
   color: $clr;
-  font-size: $fsz;
-  line-height: $lh;
+  //   font-size: $fsz;
+  //   line-height: $lh;
   text-decoration: underline;
 }
 

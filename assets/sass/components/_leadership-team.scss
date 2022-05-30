@@ -4,22 +4,26 @@
     // padding-right: 24px; newest comment
   }
   & > div.leadership-team-container {
-    max-width: 870px;
+    max-width: calc(870px - 30px);
 
     @media only screen and (min-width: 700px) and (max-width: 870px) {
       max-width: 670px;
+      max-width: calc(670px - 30px);
     }
 
     @media only screen and (min-width: 540px) and (max-width: 700px) {
       max-width: 540px;
+      max-width: calc(540px - 30px);
     }
 
     @media only screen and (min-width: 375px) and (max-width: 540px) {
       max-width: 375px;
+      max-width: calc(375px - 30px);
     }
 
     @media only screen and (max-width: 375px) {
       max-width: 300px;
+      max-width: calc(300px - 30px);
     }
 
     margin: 0 auto;
@@ -50,7 +54,11 @@
         // flex-grow: 1;
 
         h3 {
-          @include smallcaps;
+          @include smallcaps-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-smallcaps-default;
+          }
 
           font-size: 24px;
           line-height: 36px;
@@ -69,7 +77,12 @@
         }
 
         p {
-          @include p;
+          color: $paragraph-color;
+          @include paragraph-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-paragraph-default;
+          }
         }
       }
     }
@@ -77,6 +90,9 @@
     & > div:nth-of-type(2) {
       //   @include flex($gp: 40px); new comment
       @include flex($gp: 0);
+      @media only screen and (min-width: 701px) and (max-width: 870px) {
+        justify-content: space-between;
+      }
       @media only screen and (max-width: 575.98px) {
         gap: 28px;
       }
@@ -88,22 +104,40 @@
       z-index: 10;
 
       & > div {
+        @media only screen and (min-width: 701px) and (max-width: 870px) {
+          padding-right: 0;
+        }
+        margin-bottom: 65px;
         @include flex(column, $gp: 8px, $ai: flex-start);
         // flex-basis: calc((100% - 80px) / 3); new comment
         flex-basis: 33.33%;
         @media only screen and (max-width: 575.98px) {
           @include flex(row, $gp: 8px, $ai: flex-start);
+          padding-right: 0;
           flex-basis: 100%;
+          align-items: center;
         }
         padding-left: 20px;
         padding-right: 20px;
         // flex-grow: 1;
 
-        h3 {
-          @include h3;
+        div.lf {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
 
-          font-size: 24px;
-          line-height: 36px;
+          .linkedin-image {
+            width: 31px;
+            height: 31px;
+          }
+        }
+
+        h3 {
+          @include heading-level-4-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-heading-level-4-default;
+          }
 
           position: relative;
           z-index: 1;
@@ -121,12 +155,16 @@
 
           img:nth-of-type(2) {
             filter: grayscale(100%);
+            @media only screen and (min-width: 560px) and (max-width: 870px) {
+              max-width: 100%;
+            }
             @media only screen and (max-width: 575.98px) {
               width: 150px;
             }
 
             @media only screen and (max-width: 480px) {
-              width: 60px;
+              //   width: 60px;
+              width: 100px;
             }
 
             &:hover {
@@ -136,13 +174,22 @@
         }
 
         & > div {
-          @include flex(column, $ai: flex-start, $gp: 4px);
+          @include flex(column, $ai: flex-start, $gp: 12px);
           p {
-            @include p;
+            @include paragraph-default;
+
+            @media only screen and (max-width: 575.98px) {
+              @include m-paragraph-default;
+            }
           }
 
           span {
-            @include h4;
+            @include paragraph-default;
+
+            @media only screen and (max-width: 575.98px) {
+              font-size: 12px;
+              line-height: 20px;
+            }
             color: rgba(189, 189, 189, 1);
           }
         }

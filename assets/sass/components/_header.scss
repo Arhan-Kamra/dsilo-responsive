@@ -9,18 +9,31 @@ header {
     @media only screen and (max-width: 991.98px) {
       display: none;
     }
+
+    button {
+      display: none;
+    }
   }
   &.header-mobile {
     display: none;
+    button {
+      display: none;
+    }
 
     @media only screen and (max-width: 991.98px) {
       display: flex;
+      justify-content: flex-start;
     }
 
     @media only screen and (max-width: 575.98px) {
       a:nth-of-type(2) img {
         width: 132px;
       }
+    }
+
+    & > a:nth-of-type(2) {
+      margin-left: calc(50% - 19px);
+      transform: translateX(-50%);
     }
   }
   padding-top: 28px;
@@ -35,13 +48,76 @@ header {
 
       & > li {
         @include li;
+        position: relative;
 
         > a {
-          @include a;
-          @include li;
+          //   @include a;
+          //   @include li;
+          @include body-link-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-body-link-default;
+          }
+          color: $heading-color;
+
+          @include flex($ai: center, $gp: 8px);
         }
-        & > ul {
-          display: none;
+
+        &:hover {
+          & > div > ul {
+            display: flex;
+          }
+        }
+
+        & > div {
+          position: absolute;
+          padding-top: 34px;
+          > ul {
+            display: none;
+            //   display: flex;
+            flex-direction: column;
+            gap: 0;
+            //   top: 34px;
+            //   padding: 16px 28px 16px 16px;
+
+            background-color: #121212;
+            padding-left: 16px;
+            padding-right: 28px;
+            border: 1px solid #322e2e;
+
+            li {
+              padding-top: 16px;
+              padding-bottom: 12px;
+              // padding-left: 16px;
+              // padding-right: 28px;
+              border-bottom: 1px solid #322e2e;
+              min-width: 155px;
+              //   min-width: max-content;
+
+              &:last-of-type {
+                border-bottom: none;
+                min-width: max-content;
+              }
+              a {
+                text-decoration: none;
+                // @include a;
+                @include body-link-default;
+
+                @media only screen and (max-width: 575.98px) {
+                  @include m-body-link-default;
+                }
+                display: inline-block;
+                width: max-content;
+                color: $heading-color;
+
+                &:hover {
+                  @include ahover;
+                  text-decoration: none;
+                  color: $purple-color;
+                }
+              }
+            }
+          }
         }
       }
     }

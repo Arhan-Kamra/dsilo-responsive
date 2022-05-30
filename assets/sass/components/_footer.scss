@@ -10,7 +10,7 @@ footer {
     padding-bottom: 48px;
 
     @media only screen and (max-width: 576px) {
-      max-width: 300px;
+      //   max-width: 300px;
     }
 
     @media only screen and (max-width: 991.98px) {
@@ -46,27 +46,52 @@ footer {
         }
 
         address {
-          @include p;
+          @include paragraph-default;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-paragraph-default;
+          }
         }
       }
     }
 
     & > div:nth-of-type(2) {
+      align-content: space-between;
       //   flex-basis: 30%;
       flex-basis: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      /* gap: 12px; */
+      max-height: 224px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      margin-top: 18px;
       @media only screen and (max-width: 576px) {
         flex-basis: 100%;
       }
 
+      @media only screen and (max-width: 350px) {
+        max-height: unset;
+      }
+
       h3 {
-        @include pbig;
-        margin-bottom: 16px;
+        @include heading-level-4-default;
+        font-weight: normal;
+
+        @media only screen and (max-width: 575.98px) {
+          @include m-heading-level-4-default;
+        }
+
+        margin-bottom: 10px;
       }
 
       ul {
         @include flex(column, $gp: 12px);
         max-height: 270px;
         flex-wrap: wrap;
+        margin-bottom: 24px;
 
         @media only screen and (max-width: 575.98px) {
           align-content: space-between;
@@ -76,13 +101,16 @@ footer {
           //   max-width: 120px;
           @media only screen and (max-width: 575.98px) {
             width: max-content;
-            max-width: 160px;
+            // max-width: 160px;
           }
 
           & > a {
-            @include a;
+            @include footer-link-default;
+
+            @media only screen and (max-width: 575.98px) {
+              @include m-footer-link-default;
+            }
             color: $text-color;
-            font-size: 14px;
           }
         }
       }
@@ -98,7 +126,12 @@ footer {
         flex-basis: 100%;
       }
       h3 {
-        @include pbig;
+        @include heading-level-4-default;
+        font-weight: normal;
+
+        @media only screen and (max-width: 575.98px) {
+          @include m-heading-level-4-default;
+        }
       }
 
       @include flex(column);
@@ -124,7 +157,13 @@ footer {
         }
 
         input[type="button"] {
+          @include body-link-default;
           @include button-default-style;
+
+          @media only screen and (max-width: 575.98px) {
+            @include m-body-link-default;
+            text-transform: capitalize;
+          }
           padding-top: 12px;
           padding-bottom: 12px;
 

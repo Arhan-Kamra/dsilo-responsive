@@ -17,7 +17,11 @@
     @include flex(column, $gp: 24px);
 
     div.smallcaps {
-      @include smallcaps;
+      @include smallcaps-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-smallcaps-default;
+      }
     }
 
     & > div:nth-of-type(2) {
@@ -40,7 +44,12 @@
     }
 
     p {
-      @include p;
+      color: $paragraph-color;
+      @include paragraph-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-paragraph-default;
+      }
       position: relative;
       top: -14px;
 
@@ -52,7 +61,11 @@
     }
 
     a {
-      @include a;
+      @include body-link-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-body-link-default;
+      }
       z-index: 99999999999999;
     }
 

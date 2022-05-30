@@ -16,6 +16,84 @@
     />
   </head>
   <body class="about-us">
+      
+     <div class="hamburger-menu">
+      <div>
+        <a class="close-icon" href="#">&times;</a>
+      </div>
+      <ul>
+        <li>
+          <div>
+            <a href="./index.html">home</a>
+          </div>
+        </li>
+        <li>
+          <div class="div-container">
+            <a href="#">ai platform</a>
+            <span
+              ><img src="./assets/images/dropdown-down-icon.svg" alt=""
+            /></span>
+          </div>
+          <ul>
+            <li>
+              <div>
+                <a href="./capabilities.html">capabilities</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="./technology.html">technology</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="div-container">
+            <a href="#">company</a>
+            <span
+              ><img src="./assets/images/dropdown-down-icon.svg" alt=""
+            /></span>
+          </div>
+          <ul>
+            <li>
+              <div>
+                <a href="./about-us.html">about us</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="div-container">
+            <a href="#">solutions</a>
+            <span
+              ><img src="./assets/images/dropdown-down-icon.svg" alt=""
+            /></span>
+          </div>
+
+          <ul>
+            <li>
+              <div>
+                <a href="./solutions.html#idi">intelligent document insights</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="./solutions.html#icp"
+                  >intelligent contract performance</a
+                >
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="./solutions.html#icr"
+                  >intelligent compliance and risk</a
+                >
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <div class="containerr">
       <div class="mid-line-containerr">
         <div></div>
@@ -25,50 +103,71 @@
       
       
 
+     
       <header class="header-desktop">
         <a href="/dsilo/index.html"
           ><img src="./assets/images/dsilo-logo.png" alt="dsilo logo"
         /></a>
         <div>
-          <ul>
+          <ul class="navigation-menu">
             <li>
-              <a href="./about-us.html"> About</a>
-              <ul>
-                <li><a href="#">AI Platform1</a></li>
-                <li><a href="#">AI Platform2</a></li>
-                <li><a href="#">AI Platform3</a></li>
-              </ul>
+              <a href="#">
+                AI Platform
+                <img
+                  src="./assets/images/dropdown-icon.svg"
+                  alt="dropdown icon"
+              /></a>
+              <div>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="./capabilities.html">Capabilities</a></li>
+                  <li><a href="./technology.html">Technology</a></li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="./capabilities.html"> Capabilities</a>
-              <ul>
-                <li><a href="#">Solutions1</a></li>
-                <li><a href="#">Solutions2</a></li>
-                <li><a href="#">Solutions3</a></li>
-              </ul>
+              <a href="#"
+                >Solutions<img
+                  src="./assets/images/dropdown-icon.svg"
+                  alt="dropdown icon"
+              /></a>
+              <div>
+                <ul class="dropdown-sub-menu">
+                  <li>
+                    <a href="./solutions.html#idi"
+                      >Intelligent Document Insights</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./solutions.html#icp"
+                      >Intelligent Contract Performance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./solutions.html#icr"
+                      >Intelligent Compliance and Risk</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="./solutions.html"> Solutions</a>
-              <ul>
-                <li><a href="#">Company1</a></li>
-                <li><a href="#">Company2</a></li>
-                <li><a href="#">Company3</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="./technology.html"> Technology</a>
-              <ul>
-                <li><a href="#">Company1</a></li>
-                <li><a href="#">Company2</a></li>
-                <li><a href="#">Company3</a></li>
-              </ul>
+              <a href="#"
+                >Company<img
+                  src="./assets/images/dropdown-icon.svg"
+                  alt="dropdown icon"
+              /></a>
+              <div>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="./about-us.html">About us</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
           <button>login</button>
         </div>
       </header>
       <header class="header-mobile">
-        <a href="index.html"
+        <a href="#"
           ><img src="./assets/images/hamburger-icon.svg" alt="dsilo logo"
         /></a>
         <a href="index.html"
@@ -164,8 +263,10 @@
               </h3>
               <div>
               <h3>Sharad Malhautra</h3>
+              <div class="lf">
               <span>CEO</span>
-              <img style="display:block" src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" style="display:block" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 2nd section starts here -->
@@ -176,8 +277,10 @@
               </h3>
               <div>
               <h3>Jay Gutta</h3>
+              <div class="lf">
               <span>CTO</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 3rd section starts here -->
@@ -188,20 +291,24 @@
               </h3>
               <div>
               <h3>Lalit Gupta, Ph.D.</h3>
+              <div class="lf">
               <span>Head, Deep Learning & AI </span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 4th section starts here -->
             <div>
               <h3>
                 <img src="./assets/images/dot.svg" alt="" />
-                <img src="./assets/images/dakin-ferris.png" alt="" />
+                <img src="./assets/images/ploy-thajchayapong.png" alt="" />
               </h3>
               <div>
-              <h3>Dakin Ferris</h3>
-              <span>Head, Legal </span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <h3>Ploy Thajchayapong, Ph.D.</h3>
+              <div class="lf">
+              <span>Lead, Deep Learning & AI</span>
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 5th section starts here -->
@@ -212,22 +319,14 @@
               </h3>
               <div>
               <h3>Hemakumar Mudimi</h3>
+              <div class="lf">
               <span>Lead, Engineering</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 6th section starts here -->
-            <div>
-              <h3>
-                <img src="./assets/images/dot.svg" alt="" />
-                <img src="./assets/images/ploy-thajchayapong.png" alt="" />
-              </h3>
-              <div>
-              <h3>Ploy Thajchayapong, Ph.D.</h3>
-              <span>Lead, Deep Learning & AI</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
-              </div>
-            </div>
+            
             <!-- 7th section starts here -->
             <div>
               <h3>
@@ -236,8 +335,10 @@
               </h3>
               <div>
               <h3>Mohanvel T</h3>
+              <div class="lf">
               <span>Lead, AI Ops </span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 8th section starts here -->
@@ -248,8 +349,10 @@
               </h3>
               <div>
               <h3>Arjun Chougule</h3>
+              <div class="lf">
               <span>Lead, Analytics</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 9th section starts here -->
@@ -260,8 +363,10 @@
               </h3>
               <div>
               <h3>Samyuktha Gutta</h3>
+              <div class="lf">
               <span>Lead, Data</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 10th section starts here -->
@@ -272,8 +377,23 @@
               </h3>
               <div>
               <h3>Malli Pujala</h3>
+              <div class="lf">
               <span>Lead, Dev Ops</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
+              </div>
+            </div>
+            <div>
+              <h3>
+                <img src="./assets/images/dot.svg" alt="" />
+                <img src="./assets/images/dakin-ferris.png" alt="" />
+              </h3>
+              <div>
+              <h3>Dakin Ferris</h3>
+              <div class="lf">
+              <span>Head, Legal </span>
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
           </div>
@@ -287,7 +407,8 @@
               <h3>
                 <img src="./assets/images/dot.svg" alt="" />Advisors
 </h3>
-              <p>We will help a client's problems to develop the products they have with high quality</p>
+              <p>Providing domain expertise, market insights, future
+directions and more…</p>
             </div>
           </div>
 
@@ -300,8 +421,10 @@
               </h3>
               <div>
               <h3>Michaela Greenan</h3>
+              <div class="lf">
               <span>Advisor</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 2nd section starts here -->
@@ -312,8 +435,10 @@
               </h3>
               <div>
               <h3>Rod Robinson</h3>
+              <div class="lf">
               <span>Advisor</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 3rd section starts here -->
@@ -324,8 +449,10 @@
               </h3>
               <div>
               <h3>Shahid Javed</h3>
+              <div class="lf">
               <span>Advisor</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 4th section starts here -->
@@ -336,8 +463,10 @@
               </h3>
               <div>
               <h3>Niul Burton</h3>
+              <div class="lf">
               <span>Advisor</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
             <!-- 5th section starts here -->
@@ -348,8 +477,10 @@
               </h3>
               <div>
               <h3>Vineet Garg</h3>
+              <div class="lf">
               <span>Advisor</span>
-              <img src="./assets/images/linkedin-square.png" alt="" />
+              <img class="linkedin-image" src="./assets/images/linkedin-square.png" alt="" />
+              </div>
               </div>
             </div>
           </div>
@@ -370,7 +501,7 @@
                 as supply chain and finance. They saw first-hand how many
                 organizations:</p>
                 <ul>
-                    <li>Missed opportunities, leaving money on the table
+                    <li>Miss opportunities, leaving money on the table
                 due to inadequate capabilities or resources, </li>
                     <li>Suboptimize
                 performance due to silos within their enterprise, and</li>
@@ -389,14 +520,14 @@
                 the enterprise today — instead of waiting for tomorrow.</p>
                  <p>With
                 several patents already filed and more underway, dSilo is on the
-                path to making “AI @ scale” a reality in today’s business.</p>
+                path to making<br /> “AI @ scale” a reality in today’s business.</p>
               </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <footer>
+       <footer>
         <div>
           <div>
             <a href="#"
@@ -438,20 +569,34 @@ New York, 10003-1502 US
             </div>
           </div>
           <div>
-            <h3>Imp Links</h3>
+            <h3>Ai Platform</h3>
             <ul>
-              <li><a href="./index.html">company</a></li>
-              <li><a href="./about-us.html">about</a></li>
+              <li><a href="./capabilities.html">Capabilities</a></li>
+              <li><a href="./technology.html">technology</a></li>
+            </ul>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./about-us.html">about us</a></li>
+            </ul>
+            <h3>Solutions</h3>
+            <ul>
+              <li>
+                <a href="./solutions.html#idi">Intelligent Document Insights</a>
+              </li>
+              <li>
+                <a href="./solutions.html#icp"
+                  >Intelligent Contract Performance</a
+                >
+              </li>
+              <li>
+                <a href="./solutions.html#icr">Intelligent Compliance and Risk</a>
+              </li>
+              <!-- <li><a href="./index.html">company</a></li>
               <li><a href="#">partners</a></li>
               <li><a href="#">careers</a></li>
               <li><a href="#">press releases</a></li>
               <li><a href="#">A&nbsp;I platform</a></li>
-              <li><a href="./capabilities.html">Capabilities</a></li>
-              <li><a href="./technology.html">technology</a></li>
-              <li><a href="./solutions.html">solutions</a></li>
-              <li><a href="#">document insights extraction</a></li>
-              <li><a href="#">contract value performance</a></li>
-              <li><a href="#">smart compliance</a></li>
+              <li><a href="./solutions.html">solutions</a></li> -->
             </ul>
           </div>
           <div>
@@ -469,5 +614,6 @@ New York, 10003-1502 US
     <script src="./assets/libraries/jQuery/jquery.min.js"></script>
     <script src="./assets/libraries/OwlCarousel2/dist/owl.carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/hamburger-menu.js"></script>
   </body>
 </html>

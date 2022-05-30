@@ -21,7 +21,11 @@
     @include flex(column, $gp: 16px);
 
     div.smallcaps {
-      @include smallcaps;
+      @include smallcaps-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-smallcaps-default;
+      }
     }
 
     & > div:nth-of-type(2) {
@@ -37,13 +41,20 @@
       }
     }
     h3 {
-      @include h3big;
-      font-size: 34px;
-      line-height: 44px;
+      @include heading-level-2-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-heading-level-2-default;
+      }
     }
 
     p {
-      @include p;
+      color: $paragraph-color;
+      @include paragraph-default;
+
+      @media only screen and (max-width: 575.98px) {
+        @include m-paragraph-default;
+      }
     }
   }
 
